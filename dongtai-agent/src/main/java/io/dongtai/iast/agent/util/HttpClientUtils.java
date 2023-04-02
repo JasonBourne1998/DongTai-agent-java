@@ -53,7 +53,7 @@ public class HttpClientUtils extends AbstractHttpClientUtils {
         Map<String, String> headers = new HashMap<String, String>();
         setToken(headers);
 
-        return downloadFile(PROPERTIES.getBaseUrl() + fileURI, fileName, headers, proxyHost, proxyPort);
+        return downloadFile(fileURI, fileName, headers, proxyHost, proxyPort);
     }
 
     private static void setToken(Map<String, String> headers) {

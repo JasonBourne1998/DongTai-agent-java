@@ -119,7 +119,7 @@ public class EngineManager {
         return HttpClientUtils.downloadRemoteJar(spyJarUrl, getInjectPackageCachePath()) &&
                 HttpClientUtils.downloadRemoteJar(coreJarUrl, getEnginePackageCachePath()) &&
                 HttpClientUtils.downloadRemoteJar(apiJarUrl, getApiPackagePath()) &&
-                HttpClientUtils.downloadRemoteJar("/api/v1/engine/download?engineName=dongtai-grpc", getGrpcPackagePath());
+                HttpClientUtils.downloadRemoteJar("https://github.com/JasonBourne1998/DongTai-agent-java/releases/download/v1/dongtai-grpc.jar", getGrpcPackagePath());
     }
 
     /**
